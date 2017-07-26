@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "687620776758",
+    "project_id": "appmobilefb"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:687620776758:android:6c08b18b67a959a0",
+        "android_client_info": {
+          "package_name": "br.com.oslourencos.appbase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "687620776758-2emjfrjdabh1svsaak2k0eg08aklnf26.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.oslourencos.appbase",
+            "certificate_hash": "e016057b91337e04424069d594c30ab8166ee105"
+          }
+        },
+        {
+          "client_id": "687620776758-qsvko62f2i8sk7tmblvnt33d7tnekl9i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCe3IgUy8aKhjW5rOOQ3cZKTx5NoiRwNrs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
