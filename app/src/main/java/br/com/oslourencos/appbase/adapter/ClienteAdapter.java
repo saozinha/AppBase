@@ -5,6 +5,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -22,8 +23,6 @@ public class ClienteAdapter extends RecyclerView.Adapter<ClienteAdapter.ViewHold
     public Context context;
     private List<Cliente> dataset;
 
-    //quem chamar precisa passar o context
-    //context e uma classe abstrata que permite acesso a recursos e classes específicas de aplicativo
     public ClienteAdapter(Context context) {
         this.context = context;
         dataset = new ArrayList<>();
@@ -32,8 +31,6 @@ public class ClienteAdapter extends RecyclerView.Adapter<ClienteAdapter.ViewHold
     public void addListCliente(List<Cliente> listaCliente) {
 
         dataset.addAll(listaCliente);
-
-        // notifica que houve mudanca na lista
         notifyDataSetChanged();
     }
 
@@ -45,12 +42,12 @@ public class ClienteAdapter extends RecyclerView.Adapter<ClienteAdapter.ViewHold
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        // recuperar um cliente por vez , de acordo com a posicao
         Cliente cliente = dataset.get(position);
         holder.name.setText(cliente.getName());
         holder.mail.setText(cliente.getEmail());
         holder.phone.setText(cliente.getPhone());
         holder.website.setText(cliente.getWebsite());
+        holder.photo.setImageResource(cliente.getPhoto());
     }
 
     @Override
@@ -62,6 +59,7 @@ public class ClienteAdapter extends RecyclerView.Adapter<ClienteAdapter.ViewHold
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
         TextView name, phone, mail, website;
+        ImageView photo;
 
         public ViewHolder(View itemView) {
             super(itemView);
@@ -69,6 +67,7 @@ public class ClienteAdapter extends RecyclerView.Adapter<ClienteAdapter.ViewHold
             phone = itemView.findViewById(R.id.phone);
             mail = itemView.findViewById(R.id.mail);
             website = itemView.findViewById(R.id.website);
+            photo = itemView.findViewById(R.id.photo);
         }
     }
 

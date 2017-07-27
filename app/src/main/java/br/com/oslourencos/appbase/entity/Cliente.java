@@ -13,12 +13,15 @@ public class Cliente {
     private String website;
     private int photo;
 
-    public Cliente(int id, String name, String email, String phone, String website) {
+
+
+    public Cliente(int id, String name, String email, String phone, String website, int photo) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.phone = phone;
         this.website = website;
+        this.photo = photo;
     }
 
     public int getId() {
@@ -68,4 +71,5 @@ public class Cliente {
     public void setPhoto(int photo) {
         this.photo = photo;
     }
+
 }
