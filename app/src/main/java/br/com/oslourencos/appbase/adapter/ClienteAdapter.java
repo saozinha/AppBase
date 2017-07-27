@@ -29,10 +29,10 @@ public class ClienteAdapter extends RecyclerView.Adapter<ClienteAdapter.ViewHold
     }
 
     public void addListCliente(List<Cliente> listaCliente) {
-
         dataset.addAll(listaCliente);
         notifyDataSetChanged();
     }
+
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -54,6 +54,8 @@ public class ClienteAdapter extends RecyclerView.Adapter<ClienteAdapter.ViewHold
     public int getItemCount() {
         return dataset.size();
     }
+
+
 
     // Classe viewHolder
     public static class ViewHolder extends RecyclerView.ViewHolder {

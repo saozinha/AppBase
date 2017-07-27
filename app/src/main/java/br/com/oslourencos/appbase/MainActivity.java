@@ -12,7 +12,6 @@ import java.util.List;
 import br.com.oslourencos.appbase.adapter.ClienteAdapter;
 import br.com.oslourencos.appbase.entity.Cliente;
 
-//Aplicativo Base desenvolvido com o objetivo de introduzir estudantes iniciantes ao mundo de desenvolvimento de aplicativos.
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
