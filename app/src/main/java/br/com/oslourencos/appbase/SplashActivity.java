@@ -4,6 +4,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
+<<<<<<< HEAD
+=======
+import android.view.Window;
+import android.view.WindowManager;
+>>>>>>> 5da367c6bfd9e752392e553ac9e5b87045fbe71a
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -12,6 +17,12 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.screen_splash);
 
+<<<<<<< HEAD
+=======
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        
+>>>>>>> 5da367c6bfd9e752392e553ac9e5b87045fbe71a
         openListClient();
     }
 
@@ -24,6 +35,10 @@ public class SplashActivity extends AppCompatActivity {
                 startActivity(i);
                 finish();
             }
+<<<<<<< HEAD
         },2000); // conta 2 segundos
+=======
+        },4000); // conta 2 segundos
+>>>>>>> 5da367c6bfd9e752392e553ac9e5b87045fbe71a
     }
 }

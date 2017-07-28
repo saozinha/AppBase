@@ -13,12 +13,18 @@
     <ImageView
         android:id="@+id/logo"
         android:layout_width="match_parent"
+<<<<<<< HEAD
         android:layout_height="400dp"
         android:layout_marginBottom="10dp"
+=======
+        android:layout_height="350dp"
+        android:layout_centerInParent="true"
+>>>>>>> 5da367c6bfd9e752392e553ac9e5b87045fbe71a
         android:src="@drawable/buying_splash"/>
 
     <TextView
         android:layout_width="match_parent"
+<<<<<<< HEAD
         android:layout_height="wrap_content"
         android:layout_below="@+id/logo"
         android:layout_marginBottom="5dp"
@@ -30,4 +36,14 @@
         android:textColor="#A52A2A"
         android:textSize="20sp"
         android:textStyle="bold" />
+=======
+        android:layout_height="30dp"
+        android:layout_below="@+id/logo"
+        android:text="Carteira de Clientes"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:textSize="25sp"
+        android:shadowColor="#ff1b0c40"/>
+>>>>>>> 5da367c6bfd9e752392e553ac9e5b87045fbe71a
 </RelativeLayout>

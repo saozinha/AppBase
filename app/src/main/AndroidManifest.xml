@@ -17,7 +17,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity android:name=".MainActivity"></activity>
+=======
+        <activity android:name=".SplashActivity"></activity>
+>>>>>>> 5da367c6bfd9e752392e553ac9e5b87045fbe71a
     </application>
 
 </manifest>
