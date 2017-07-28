@@ -13,7 +13,13 @@ public class Cliente {
     private String website;
     private int photo;
 
-
+    public Cliente(int id, String name, String email, String phone, String website) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.phone = phone;
+        this.website = website;
+    }
 
     public Cliente(int id, String name, String email, String phone, String website, int photo) {
         this.id = id;
